@@ -17,11 +17,14 @@
     <!-- endbuild -->
 	<!-- build:css assets/styles/main.css -->
     <!-- build:css content/css/main.css -->
-    <link rel="stylesheet" href="content/css/main.css"> 
-<!--     <link rel="stylesheet" href="content/css/normalize.min.css"> -->
-        <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="content/css/bootstrap.min.css">
-    <link rel="stylesheet" href="content/css/media-queries.css">
+    <link rel="stylesheet" href="content/css/main.css">   
+ 
+<link rel="stylesheet" href="content/css/media-queries.css">
+<link rel="stylesheet" href="content/css/normalize.min.css">
+<link rel="stylesheet" href="content/css/jquery.fancybox.css">
+<link rel="stylesheet" href="content/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/animate.css">
     <!-- endbuild -->
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.webapp" />
@@ -33,13 +36,14 @@
     <![endif]-->
 <!--     <page-ribbon></page-ribbon> -->
     <div ui-view="navbar" ng-cloak></div>
-    <div class="container">
-        <div class="well" ui-view="content">
+    <div class="container" ui-view="content">
+<!--         <div class="well" > -->
             <!-- Angular views -->
           
-		</div>
+<!-- 		</div> -->
        
     </div>
+    
      <div class="footer">
 		    <p translate="footer" class="pull-left">This is your footer</p>
 		  
@@ -208,5 +212,20 @@
 
 	<!-- build:js({.tmp,src/main/webapp}) scripts/app.js -->
 <script src="app/layouts/navbar/bootstrap.min.js"></script>
+<script src="app/layouts/navbar/wow.min.js"></script>
+  	<script>
+			var wow = new WOW ({
+				boxClass:     'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset:       120,          // distance to the element when triggering the animation (default is 0)
+				mobile:       false,       // trigger animations on mobile devices (default is true)
+				live:         true        // act on asynchronously loaded content (default is true)
+			  }
+			);
+			wow.init();
+		</script> 
+  	<script src="app/layouts/navbar/jquery.singlePageNav.min.js"></script>
+  	<script src="app/layouts/navbar/custom.js"></script>
+	<script src="app/layouts/navbar/jquery.fancybox.pack.js"></script>
 </body>
 </html>

@@ -56,18 +56,18 @@ $(document).ready(function(){
 //	/*	Timer count
 //	/* ========================================================================= */
 //
-	"use strict";
-    $(".number-counters").appear(function () {
-        $(".number-counters [data-to]").each(function () {
-            var e = $(this).attr("data-to");
-            $(this).delay(6e3).countTo({
-                from: 50,
-                to: e,
-                speed: 3e3,
-                refreshInterval: 50
-            })
-        })
-    });
+//	"use strict";
+//    $(".number-counters").appear(function () {
+//        $(".number-counters [data-to]").each(function () {
+//            var e = $(this).attr("data-to");
+//            $(this).delay(6e3).countTo({
+//                from: 50,
+//                to: e,
+//                speed: 3e3,
+//                refreshInterval: 50
+//            })
+//        })
+//    });
 //	
 	/* ========================================================================= */
 	/*	Back to Top

@@ -17,14 +17,15 @@
     <!-- endbuild -->
 	<!-- build:css assets/styles/main.css -->
     <!-- build:css content/css/main.css -->
+    <link rel="stylesheet" href="content/css/font-awesome.min.css">
     <link rel="stylesheet" href="content/css/bootstrap.min.css">
     <link rel="stylesheet" href="content/css/main.css">   
  
 <link rel="stylesheet" href="content/css/media-queries.css">
 <link rel="stylesheet" href="content/css/normalize.min.css">
 <link rel="stylesheet" href="content/css/jquery.fancybox.css">
-<link rel="stylesheet" href="content/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/animate.css">
+
+<link rel="stylesheet" href="content/css/animate.css">
     <!-- endbuild -->
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.webapp" />
@@ -36,18 +37,18 @@
     <![endif]-->
 <!--     <page-ribbon></page-ribbon> -->
     <div ui-view="navbar" ng-cloak></div>
-    <div class="container" ui-view="content">
+    <section class="features" ui-view="content">
 <!--         <div class="well" > -->
             <!-- Angular views -->
           
 <!-- 		</div> -->
        
-    </div>
+    </section>
     
      <div class="footer">
 		    <p translate="footer" class="pull-left">This is your footer</p>
 		  
-		</div>
+	</div>
     <noscript>
         <h1>You must enable javascript to view this page.</h1>
     </noscript>

@@ -1,42 +1,57 @@
+<!-- <link rel="stylesheet" href="content/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="content/css/animate.css">
 <div ng-cloak>
     <section id="features" class="features">
-		<div class="container"></div>
+		<div class="container">
 			<div class="row">
 				<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
 						<h2>Features</h2>
 						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
 					</div>
-
-				<div ng-switch="vm.isAuthenticated()">
-					<div class="alert alert-success" ng-switch-when="true" data-translate="home.logged.message" translate-values="{username: '{{vm.account.login}}'}">
-						You are logged in as user "{{vm.account.login}}".
+			<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-github fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Branding</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+							</div>
+						</div>
 					</div>
-
-					<div class="alert alert-warning" ng-switch-when="false" data-translate="global.messages.info.authenticated" translate-compile>
-						If you want to <a class="alert-link" href="" ng-click="vm.login()">sign in</a>, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-pencil fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Development</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+							</div>
+						</div>
 					</div>
-
-					<div class="alert alert-warning" ng-switch-when="false" data-translate="global.messages.info.register" translate-compile>
-						You don't have an account yet? <a class="alert-link" ui-sref="register">Register a new account</a>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-bullhorn fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Consulting</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+							</div>
+						</div>
 					</div>
-				</div>
-
-				<p data-translate="home.question">
-					If you have any question on JHipster:
-				</p>
-
-				<ul>
-					<li><a href="http://jhipster.github.io/" target="_blank" rel="noopener" data-translate="home.link.homepage">JHipster homepage</a></li>
-					<li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener" data-translate="home.link.stackoverflow">JHipster on Stack Overflow</a></li>
-					<li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener" data-translate="home.link.bugtracker">JHipster bug tracker</a></li>
-					<li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener" data-translate="home.link.chat">JHipster public chat room</a></li>
-					<li><a href="https://twitter.com/java_hipster" target="_blank" rel="noopener" data-translate="home.link.follow">follow @java_hipster on Twitter</a></li>
-				</ul>
-
-				<p>
-				 <span data-translate="home.like">If you like JHipster, don't forget to give us a star on <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></span>&nbsp;<a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener" data-translate="home.github">Github</a>!
-				</p>
 			</div>
 			</div>
+			
     </section>
 </div>

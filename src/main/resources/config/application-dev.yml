@@ -31,12 +31,12 @@ spring:
         livereload:
             enabled: false # we use gulp + BrowserSync for livereload
     jackson:
-        serialization.indent_output: true
+           serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:file:./target/h2db/db/registrationplatformapp;DB_CLOSE_DELAY=-1
-        username: RegistrationPlatformApp
-        password:
+        url: jdbc:mysql://localhost:3306/registrationplatformapp?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: root
+        password: root
     h2:
         console:
             enabled: false

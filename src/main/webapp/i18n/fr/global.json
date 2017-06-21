@@ -7,11 +7,6 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entités",
-                "personMySuffix": "Person",
-                "locationMySuffix": "Location",
-                "eventNotificationMySuffix": "Event Notification",
-                "eventTypeMySuffix": "Event Type",
-                "eventMySuffix": "Event",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

@@ -44,15 +44,6 @@ public class CacheConfiguration {
             cm.createCache(com.mycompany.myapp.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.mycompany.myapp.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(com.mycompany.myapp.domain.SocialUserConnection.class.getName(), jcacheConfiguration);
-            cm.createCache(com.mycompany.myapp.domain.Person.class.getName(), jcacheConfiguration);
-            cm.createCache(com.mycompany.myapp.domain.Person.class.getName() + ".events", jcacheConfiguration);
-            cm.createCache(com.mycompany.myapp.domain.Location.class.getName(), jcacheConfiguration);
-            cm.createCache(com.mycompany.myapp.domain.EventNotification.class.getName(), jcacheConfiguration);
-            cm.createCache(com.mycompany.myapp.domain.EventType.class.getName(), jcacheConfiguration);
-            cm.createCache(com.mycompany.myapp.domain.Event.class.getName(), jcacheConfiguration);
-            cm.createCache(com.mycompany.myapp.domain.Event.class.getName() + ".eventTypes", jcacheConfiguration);
-            cm.createCache(com.mycompany.myapp.domain.Event.class.getName() + ".locations", jcacheConfiguration);
-            cm.createCache(com.mycompany.myapp.domain.Event.class.getName() + ".eventNotifications", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

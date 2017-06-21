@@ -1,0 +1,23 @@
+{
+    "registrationPlatformApp": {
+        "eventNotification" : {
+            "home": {
+                "title": "Event Notifications",
+                "createLabel": "Event Notification erstellen",
+                "createOrEditLabel": "Event Notification erstellen oder bearbeiten"
+            },
+            "created": "Event Notification erstellt mit ID {{ param }}",
+            "updated": "Event Notification aktualisiert mit ID {{ param }}",
+            "deleted": "Event Notification gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Event Notification {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Event Notification"
+            },
+            "title": "Title",
+            "description": "Description",
+            "event": "Event"
+        }
+    }
+}

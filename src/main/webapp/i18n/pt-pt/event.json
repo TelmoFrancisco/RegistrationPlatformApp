@@ -1,0 +1,29 @@
+{
+    "registrationPlatformApp": {
+        "event" : {
+            "home": {
+                "title": "Events",
+                "createLabel": "Criar um(a) novo(a) Event",
+                "createOrEditLabel": "Criar ou editar um(a) Event"
+            },
+            "created": "A new Event is created with identifier {{ param }}",
+            "updated": "A Event is updated with identifier {{ param }}",
+            "deleted": "A Event is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) Event {{ id }}?"
+            },
+            "detail": {
+                "title": "Event"
+            },
+            "name": "Name",
+            "date": "Date",
+            "initDate": "Init Date",
+            "endDate": "End Date",
+            "description": "Description",
+            "person": "Person",
+            "eventType": "Event Type",
+            "location": "Location",
+            "eventNotification": "Event Notification"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "registrationPlatformApp": {
+        "person" : {
+            "home": {
+                "title": "People",
+                "createLabel": "Person erstellen",
+                "createOrEditLabel": "Person erstellen oder bearbeiten"
+            },
+            "created": "Person erstellt mit ID {{ param }}",
+            "updated": "Person aktualisiert mit ID {{ param }}",
+            "deleted": "Person gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Person {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Person"
+            },
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "phoneNumber": "Phone Number",
+            "birthDate": "Birth Date",
+            "location": "Location",
+            "event": "Event"
+        }
+    }
+}

@@ -1,0 +1,63 @@
+// an ignored comment
+/** not an ignored comment */
+entity Person {
+	firstName String,
+	lastName String,
+	email String,
+	phoneNumber String,
+	birthDate ZonedDateTime
+}
+
+entity Location {
+	streetAddress String,
+	postalCode String,
+	city String required,
+	stateProvince String
+}
+
+entity EventNotification {
+	title String required,
+    description String required
+}
+
+entity EventType {
+	name String required,
+    price String required
+}
+
+entity Event {
+	name String required,
+    date ZonedDateTime required,
+    initDate ZonedDateTime required,
+    endDate ZonedDateTime required,
+    description String
+}
+
+
+
+relationship OneToMany {
+	Event{eventType} to EventType,
+    Event{location} to Location,
+    Event{eventNotification} to EventNotification
+}
+
+
+   
+relationship OneToOne {
+	Person{location} to Location
+}
+
+relationship OneToMany {
+    Person{event} to Event
+ }
+
+// Set pagination options
+paginate Person, Event with infinite-scroll
+paginate Event with pagination
+
+dto * with mapstruct
+
+
+service all with serviceImpl
+// Set an angular suffix
+angularSuffix * with mySuffix

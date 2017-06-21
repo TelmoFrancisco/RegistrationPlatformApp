@@ -1,0 +1,43 @@
+
+<div>
+    <h2><span data-translate="registrationPlatformApp.event.detail.title">Event</span> {{vm.event.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="registrationPlatformApp.event.name">Name</span></dt>
+        <dd>
+            <span>{{vm.event.name}}</span>
+        </dd>
+        <dt><span data-translate="registrationPlatformApp.event.date">Date</span></dt>
+        <dd>
+            <span>{{vm.event.date | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="registrationPlatformApp.event.initDate">Init Date</span></dt>
+        <dd>
+            <span>{{vm.event.initDate | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="registrationPlatformApp.event.endDate">End Date</span></dt>
+        <dd>
+            <span>{{vm.event.endDate | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="registrationPlatformApp.event.description">Description</span></dt>
+        <dd>
+            <span>{{vm.event.description}}</span>
+        </dd>
+        <dt><span data-translate="registrationPlatformApp.event.person">Person</span></dt>
+        <dd>
+            <a ui-sref="person-my-suffix-detail({id:vm.event.personId})">{{vm.event.personId}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="event-my-suffix-detail.edit({id:vm.event.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

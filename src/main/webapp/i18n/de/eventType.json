@@ -1,0 +1,23 @@
+{
+    "registrationPlatformApp": {
+        "eventType" : {
+            "home": {
+                "title": "Event Types",
+                "createLabel": "Event Type erstellen",
+                "createOrEditLabel": "Event Type erstellen oder bearbeiten"
+            },
+            "created": "Event Type erstellt mit ID {{ param }}",
+            "updated": "Event Type aktualisiert mit ID {{ param }}",
+            "deleted": "Event Type gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Event Type {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Event Type"
+            },
+            "name": "Name",
+            "price": "Price",
+            "event": "Event"
+        }
+    }
+}
